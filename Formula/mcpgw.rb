@@ -1,24 +1,24 @@
 class Mcpgw < Formula
   desc "Manage MCP servers across every client and gateway their traffic"
   homepage "https://kennywillbe.github.io/mcpgw/"
-  version "0.3.0"
+  version "0.3.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "5112c609458b19702957084a783f8d670dad7d103e20a3aebf04e650ff49ad0e"
+      sha256 "cab7684077464a7c4b40867039679c54fa89d047f4480a43b18fcf2a2c085cdb"
     end
     on_intel do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a6223e670bb612b8c465eac5b973129af00dcc027dde94e2b4889a233a311e8d"
+      sha256 "fdfa89c74c327a54f4442a8df39975875a6738c748465dfa1ca677b9ccd52bdc"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0d70d9c5bb624d51d29dbde613d9de99016194bce6827d2f070d1301a1d1d114"
+      sha256 "9c493baeff9e052cda78ee6a9d346927453f2c3f31b8d00bfc2861653a1ffd5a"
     end
   end
 
