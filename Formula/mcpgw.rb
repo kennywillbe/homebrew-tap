@@ -1,5 +1,5 @@
 class Mcpgw < Formula
-  desc "One binary that manages your MCP servers across every client and gateways their traffic"
+  desc "Manage MCP servers across every client and gateway their traffic"
   homepage "https://kennywillbe.github.io/mcpgw/"
   version "0.2.1"
   license any_of: ["MIT", "Apache-2.0"]
