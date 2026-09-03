@@ -20,6 +20,11 @@ class Mcpgw < Formula
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-x86_64-unknown-linux-gnu.tar.gz"
       sha256 "ddfca786e38ceeb90134055f4868be445bef39d4f84136be6f913bed22dd3d3e"
     end
+    on_arm do
+      # 0.4.1 shipped no linux arm64 build; the release bumper fills this in at the next release.
+      url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+    end
   end
 
   def install
