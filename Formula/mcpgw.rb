@@ -1,29 +1,29 @@
 class Mcpgw < Formula
   desc "Manage MCP servers across every client and gateway their traffic"
   homepage "https://kennywillbe.github.io/mcpgw/"
-  version "0.5.0"
+  version "0.5.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "a72666656c1ac6af75e7f99ed18af9a4e828ae4ec1be5cad7ef19d344c784a25"
+      sha256 "33db79a24c5433027a403d62abc2bb42524c216426f0c31808bec90353d31a87"
     end
     on_intel do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "404831c89b9e3e4053fef7be2a0ed424f281c6bf7213a2102ad60e51285d12f2"
+      sha256 "c1d9b28cc40b72d343ca016892c04c195fb6f756ace1a0bd18681cc2a32c53a3"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "89c9b9569b80474cb640b7c3552e33b324441e2e38644c63a2426e19f5082d04"
+      sha256 "dc0da7563fee994b57136a7ab3bc84865ef3ba430fe5db3136b69407cbcec3ea"
     end
     on_arm do
       # 0.4.1 shipped no linux arm64 build; the release bumper fills this in at the next release.
       url "https://github.com/kennywillbe/mcpgw/releases/download/v#{version}/mcpgw-#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "755ab7d67d0d3c946367e9bb71252b8fe150777ffa3b2badcacc0fcce54d131a"
+      sha256 "a6a8d0f25ee5cb4073368081eed3aeae9f838475df6d4c6606c7ebc528041708"
     end
   end
 
